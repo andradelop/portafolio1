@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000; /* Agregamos un fondo blanco para el encabezado */
+}
+
+.logo {
+    display: inline-block; /* Hacemos que el contenedor del logo se comporte como un bloque en línea */
+    padding: 10px; /* Añadimos un poco de espacio alrededor del logo */
+}
+
+.logo img {
+    max-width: 200px; /* Ajusta el tamaño según tu necesidad */
+    background-color: #000000; /* Hacemos que el fondo del logo sea blanco */
+}
+
+.main {
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.claim {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid img {
+    max-width: 500px; /* Ajusta el tamaño según tu necesidad */
+    margin: 10px; /* Espacio entre imágenes */
+    transition: transform 0.5s ease; /* Agregamos transición para suavizar el efecto */
+}
+
+.image-grid img:hover {
+    transform: scale(1.1); /* Hacemos que las imágenes se agranden ligeramente al pasar el cursor sobre ellas */
+}
+
+.gmail-button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gmail-link {
+    text-decoration: none;
+}
+
+.gmail-btn {
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gmail-btn:hover {
+    background-color: #CC0000;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 2s infinite; /* Ajustamos la duración de la animación a 2 segundos */
+}
+
+@keyframes twinkle {
+    0% {transform: scale(0);}
+    50% {transform: scale(1.5);} /* Ajustamos el tamaño de las estrellas a 1.5x */
+    100% {transform: scale(0);}
+}
+
+.download-button {
+    text-align: center;
+    margin-top: 20px; /* Agregamos un margen superior para separar el botón de la cuadrícula de imágenes */
+}
+
+.download-link {
+    text-decoration: none;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    background-color: #FF0000; /* Color rojo */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #CC0000; /* Cambio de color al pasar el cursor sobre el botón */
+}
